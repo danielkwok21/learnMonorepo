@@ -3,9 +3,7 @@ Learn how to use monorepo with nodejs + client.
 Follows https://www.youtube.com/watch?v=ACDGXHR_YmI&t=144s&ab_channel=ShawnC
 
 # Quick start
-```bash
-yarn start
-```
+    yarn start
 
 # Key takeaways
 Uses yarn workspace
@@ -118,34 +116,34 @@ All of these would be referred to the root's.
 
 ## POC
 1. At server, specify `start` command at [./server/package.json](./server/package.json)
-```diff
-{
-  "name": "server",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.18.1"
-  },
-+  "scripts": {
-+    "start": "node index.js"
-+  }
-}
-```
+    ```diff
+    {
+    "name": "server",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.18.1"
+    },
+    +  "scripts": {
+    +    "start": "node index.js"
+    +  }
+    }
+    ```
 2. Start server
-```bash
-# cd to root first
+    ```bash
+    # cd to root first
 
-yarn workspace server start
-```
+    yarn workspace server start
+    ```
 
 2. Start client
-```bash
-# cd to root first
+    ```bash
+    # cd to root first
 
-yarn workspace client start
-```
+    yarn workspace client start
+    ```
 
 # Installing dependencies for workspaces
 1. Make sure workspace has a `package.json`
@@ -165,6 +163,4 @@ yarn workspace client start
 
 
 # Installing dependencies for root
-    ```bash
     yarn -W add typescript
-    ```
