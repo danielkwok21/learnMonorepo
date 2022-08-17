@@ -114,6 +114,7 @@ All of these would be referred to the root's.
 2. A `node_module` dir would be created in the root directory.
 3. Also, all modules in `node_modules` in `client` would be moved out here.
 4. From here on, all modules between `server` and `client` would be shared
+5. Might also be a good idea to create a [.gitignore](.gitignore) to omit this `node_modules`
 
 ## POC
 1. At server, specify `start` command at [./server/package.json](./server/package.json)
