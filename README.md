@@ -10,7 +10,8 @@ Each application would no longer have
 All of these would be referred to the root's.
 
 # Steps
-## Setup root
+## Setup root 
+End result: [this commit](https://github.com/danielkwok21/learnMonorepo/tree/edf1fa29171afcdd6959fd6c2b45994d16d23b24)
 1. Run init with yarn
 ```bash
 yarn init
@@ -34,3 +35,33 @@ yarn init
 +  ]
 }
 ```
+
+## Setup backend
+1. Create a folder [./server](./server/) where our backend would reside in.
+2. Run init with yarn
+```bash
+yarn init
+```
+3. The `name` in [./server/package.json](./server/package.json) should match that of `workspaces` at [./package.json](./package.json)  
+
+    i.e.
+    ```jsonc
+    // ./server/package.json
+    {
+    "name": "server", // <- this...
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+    }
+
+    ```
+    ```jsonc
+    // ./package.json
+    {
+        "workspaces": [
+            "server", // <- ...should match this
+            "client"
+        ]
+    }
+
+    ```
