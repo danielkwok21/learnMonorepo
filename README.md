@@ -1,6 +1,22 @@
+
+
 # Learn Monorepo
 Learn how to use monorepo with nodejs + client.  
 Follows https://www.youtube.com/watch?v=ACDGXHR_YmI&t=144s&ab_channel=ShawnC
+
+# Table of content
+- [Learn Monorepo](#learn-monorepo)
+- [Table of content](#table-of-content)
+- [Quick start](#quick-start)
+- [Key takeaways](#key-takeaways)
+- [Steps](#steps)
+  - [Setup root](#setup-root)
+  - [Setup backend](#setup-backend)
+  - [Setup frontend](#setup-frontend)
+  - [Installing dependencies for `server`](#installing-dependencies-for-server)
+  - [POC](#poc)
+- [Installing dependencies for workspaces](#installing-dependencies-for-workspaces)
+- [Installing dependencies for root](#installing-dependencies-for-root)
 
 # Quick start
     yarn start
@@ -163,4 +179,4 @@ All of these would be referred to the root's.
 
 
 # Installing dependencies for root
-    yarn -W add typescript
+    yarn -W add typescript- [Learn Monorepo](#learn-monorepo)
